@@ -64,6 +64,13 @@ describe('wrapup-middleware', function(){
 		expect(wrup.required[0][0]).to.be(path.normalize(__dirname + '/../foo.js'));
 	});
 
+	it('should set the output option with the dest option and req.url', function(){
+		var req = new Request(), res = new Response(), wrup = new WrapUp();
+		req.url = '/js/foo.js';
+		middle({dest: __dirname + '/public/'}, wrup)(req, res, next);
+		expect(wrup.opts.output).to.equal(__dirname + '/public/js/foo.js');
+	});
+
 	it('should require the url from a src path', function(){
 		var req = new Request(), res = new Response(), wrup = new WrapUp();
 		req.url = '/foo.js';

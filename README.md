@@ -30,6 +30,13 @@ app.get('/js/*.js', wrapup({
 	output: __dirname + '/public/out.js',
 	compress: true
 }));
+
+// instead of one output option (a single file), the dest option can be used
+// for multiple files.
+app.get('/js/*.js', wrapup({
+	dest: __dirname + '/public',
+	src: __dirname + '/views/js'
+}));
 ```
 
 ### When to use

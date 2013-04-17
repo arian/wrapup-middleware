@@ -23,6 +23,11 @@ module.exports = function(options, _wrup){
 		wrup.pipe(res);
 
 		if (options){
+
+			if (options.dest){
+				options.output = path.join(options.dest, req.url);
+			}
+
 			wrup.options(options);
 		}
 
