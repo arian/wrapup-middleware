@@ -1,6 +1,6 @@
 {
   "name": "wrapup-middleware",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Wrapup Middleware for connect.",
   "main": "index.js",
   "scripts": {
