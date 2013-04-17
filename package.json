@@ -1,0 +1,29 @@
+{
+  "name": "wrapup-middleware",
+  "version": "0.0.0",
+  "description": "Wrapup Middleware for connect.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arian/wrapup-middleware.git"
+  },
+  "keywords": [
+    "middleware",
+    "connect",
+    "wrapup",
+    "commonjs",
+    "express"
+  ],
+  "author": "Arian Stolwijk",
+  "license": "MIT",
+  "dependencies": {
+    "wrapup": "0.11"
+  },
+  "devDependencies": {
+    "expect.js": "~0.2.0",
+    "mocha": "~1.9.0"
+  }
+}
