@@ -6,7 +6,7 @@ var wrapup = require('wrapup');
 
 module.exports = function(options, _wrup){
 
-	return function(req, res, next){
+	return function wrapupMiddleware(req, res, next){
 		if (req.method != 'GET') return next();
 
 		res.type('js');
